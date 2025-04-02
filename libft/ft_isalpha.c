@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asayag <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asayag <asayag@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 09:11:30 by asayag            #+#    #+#             */
 /*   Updated: 2025/03/31 09:20:10 by asayag           ###   ########.fr       */
