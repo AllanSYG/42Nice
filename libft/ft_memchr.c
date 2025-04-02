@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 void *ft_memchr(const void *s, int c, unsigned int n)
 {
     unsigned int i;
