@@ -2,7 +2,7 @@
 #define LIBFT_H
 
 int ft_atoi(const char *str);
-int ft_bzero(void *s, unsigned int n);
+void ft_bzero(void *s, unsigned int n);
 void *ft_calloc(unsigned int count, unsigned int size);
 int ft_isalnum(char a);
 int ft_isalpha(char a);
@@ -26,7 +26,7 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*));
 char *ft_strjoin(char const *s1, char const *s2);
 int ft_strlcat(char *dst, const char *src, unsigned int size);
 int ft_strlcpy(char *dst, const char *src, unsigned int size);
-int ft_strlen(const char *a);
+unsigned int ft_strlen(const char *a);
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int ft_strncmp(const char *s1, const char *s2, int n);
 char *ft_strnstr(const char *haystack, const char *needle, unsigned int len);

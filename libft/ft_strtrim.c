@@ -11,16 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-
-int	ft_strlen(const char *a)
-{
-	int	i;
-
-	i = 0;
-	while (a[i])
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 int	is_in_set(char c, const char *set)
 {
