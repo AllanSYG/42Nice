@@ -14,7 +14,7 @@ void	*ft_memmove(void *dest, const void *src, unsigned int n)
 {
 	unsigned char		*d;
 	const unsigned char	*s;
-	int					i;
+	unsigned int		i;
 
 	d = dest;
 	s = src;
@@ -30,10 +30,11 @@ void	*ft_memmove(void *dest, const void *src, unsigned int n)
 	else
 	{
 		i = n - 1;
-		while (i >= 0)
+		while (i != 0)
 		{
 			d[i] = s[i];
 			i--;
 		}
 	}
+	return (dest);
 }

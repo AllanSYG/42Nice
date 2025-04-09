@@ -12,8 +12,8 @@
 
 int	ft_isalnum(char a)
 {
-	if (a >= 'A' && a <= 'Z' || a >= 'a' && a <= 'z')
-		return (8);
+	if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
+				return (8);
 	if (a >= '0' && a <= '9')
 		return (8);
 	return (0);

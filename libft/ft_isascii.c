@@ -12,7 +12,7 @@
 
 int	ft_isascii(char a)
 {
-	if (a >= 0 && a <= 177)
+	if (a >= 0 && a <= 127)
 		return (1);
 	return (0);
 }

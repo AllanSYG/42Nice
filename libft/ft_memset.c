@@ -12,7 +12,7 @@
 
 void	*ft_memset(void *s, int value, unsigned int n)
 {
-	int				i;
+	unsigned int		i;
 	unsigned char	*ptr;
 
 	ptr = s;

@@ -14,7 +14,7 @@ void	*ft_memcpy(void *destination, const void *source, unsigned int n)
 {
 	unsigned char		*d;
 	const unsigned char	*s;
-	int					i;
+	unsigned int		i;
 
 	d = destination;
 	s = source;
@@ -24,4 +24,5 @@ void	*ft_memcpy(void *destination, const void *source, unsigned int n)
 		d[i] = s[i];
 		i++;
 	}
+	return (destination);
 }

@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
 
-int	ft_strlen(const char *a)
+unsigned int	ft_strlen(const char *a)
 {
 	int	i;
 
@@ -20,6 +20,27 @@ int	ft_strlen(const char *a)
 	while (a[i])
 		i++;
 	return (i);
+}
+
+char	*ft_strdup(const char *s1)
+{
+	int		i;
+	char	*str;
+
+	i = 0;
+	while (s1[i])
+		i++;
+	str = malloc(i + 1);
+	if (!str)
+		return (NULL);
+	i = 0;
+	while (s1[i])
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
 
 char	*ft_substr(const char *s, unsigned int start, unsigned int len)

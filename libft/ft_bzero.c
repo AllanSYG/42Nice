@@ -12,7 +12,7 @@
 
 void	ft_bzero(void *s, unsigned int n)
 {
-	int				i;
+	unsigned int				i;
 	unsigned char	*ptr;
 
 	i = 0;
