@@ -53,15 +53,3 @@ char	*ft_itoa(int n)
 	str[len] = nb + '0';
 	return (str);
 }
-
-int main(void)
-{
-	int	values[] = {0, 42, -42, 2147483647, -2147483648};
-	for (int i = 0; i < 5; i++)
-	{
-		char *str = ft_itoa(values[i]);
-		printf("ft_itoa(%d) = %s\n", values[i], str);
-		free(str);
-	}
-	return (0);
-}
