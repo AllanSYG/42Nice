@@ -18,12 +18,12 @@ int	ft_strlcpy(char *dst, const char *src, unsigned int size)
 
 	i = 0;
 	if (size == 0)
-		return (0);
+		return (ft_strlen(src));
 	while (src[i] && i < size - 1)
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (i);
+	return (ft_strlen(src));
 }

@@ -6,7 +6,7 @@
 /*   By: asayag <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 11:55:08 by asayag            #+#    #+#             */
-/*   Updated: 2025/04/09 11:55:09 by asayag           ###   ########.fr       */
+/*   Updated: 2025/04/14 16:19:40 by asayag           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,13 @@ char	*allocate_word(const char *s, int start, int end)
 
 int	fill_words(char **result, const char *s, char c)
 {
-	int	i = 0, j, k = 0;
+	int	i;
+	int	j;
+	int	k;
 
+	j = 0;
+	i = 0;
+	k = 0;
 	while (s[i])
 	{
 		if (s[i] != c && (i == 0 || s[i - 1] == c))
@@ -57,8 +62,11 @@ int	fill_words(char **result, const char *s, char c)
 
 int	count_words(const char *s, char c)
 {
-	int	count = 0, in_word = 0;
+	int	count;
+	int	in_word;
 
+	count = 0;
+	in_word = 0;
 	while (*s)
 	{
 		if (*s != c && !in_word)

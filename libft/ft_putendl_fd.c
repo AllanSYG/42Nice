@@ -6,7 +6,7 @@
 /*   By: asayag <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 11:59:22 by asayag            #+#    #+#             */
-/*   Updated: 2025/04/09 11:59:24 by asayag           ###   ########.fr       */
+/*   Updated: 2025/04/14 16:13:39 by asayag           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-    if (s == NULL)
-        return ;
-    while (*s)
-    {
-        write(fd, s, 1);
-        s++;
-    }
-    write(fd, "\n", 1);
+	if (s == NULL)
+		return ;
+	while (*s)
+	{
+		write(fd, s, 1);
+		s++;
+	}
+	write(fd, "\n", 1);
 }

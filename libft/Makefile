@@ -23,5 +23,9 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-
+cleanb:
+	rm -f $(BONUS_OBJS)
+fcleanb: cleanb
+	rm -f $(NAME)
+fcleana: cleanb fclean
 re : fclean all

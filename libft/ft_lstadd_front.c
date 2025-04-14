@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asayag <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/14 14:43:27 by asayag            #+#    #+#             */
+/*   Updated: 2025/04/14 14:43:50 by asayag           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-    if (lst && new)
-    {
-        new->next = *lst;
-        *lst = new;
-    }
+	if (lst && new)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
 }
