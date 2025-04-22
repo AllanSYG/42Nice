@@ -1,3 +1,5 @@
+#include <stdarg.h>
+
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
@@ -7,6 +9,7 @@ int ft_putstr(char *str);
 int ft_putnbr(int n);
 int ft_put_unsigned(unsigned int n);
 int ft_puthex_lower(unsigned int n);
+int ft_puthex_lower_long(unsigned long long n);
 int ft_puthex_upper(unsigned int n);
 int handle_char(va_list args);
 int handle_string(va_list args);
