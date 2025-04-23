@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asayag <asayag@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/23 11:45:03 by asayag            #+#    #+#             */
+/*   Updated: 2025/04/23 11:45:14 by asayag           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 #include <stdlib.h>
 
@@ -10,14 +22,16 @@ unsigned int	ft_strlen(const char *a)
 		i++;
 	return (i);
 }
-char *ft_strchr(const char *s, int c)
+
+char	*ft_strchr(const char *s, int c)
 {
-    while (*s != (char)c && *s != '\0')
-        s++;
-    if (*s == (char)c)
-        return ((char *)s);
-    return (NULL);
+	while (*s != (char)c && *s != '\0')
+		s++;
+	if (*s == (char)c)
+		return ((char *)s);
+	return (NULL);
 }
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
@@ -46,6 +60,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i + j] = '\0';
 	return (ptr);
 }
+
 int	ft_strlcpy(char *dst, const char *src, unsigned int size)
 {
 	unsigned int	i;
@@ -61,6 +76,7 @@ int	ft_strlcpy(char *dst, const char *src, unsigned int size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
+
 char	*ft_strdup(const char *s1)
 {
 	int		i;
