@@ -6,10 +6,11 @@
 /*   By: asayag <asayag@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 12:59:26 by asayag            #+#    #+#             */
-/*   Updated: 2025/04/23 11:28:19 by asayag           ###   ########.fr       */
+/*   Updated: 2025/05/07 12:16:47 by asayag           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 #include <stdarg.h>
 #include <unistd.h>
 
@@ -41,6 +42,8 @@ int	ft_printf(const char *format, ...)
 
 	count = 0;
 	va_start(args, format);
+	if (format == NULL)
+		return (-1);
 	while (*format)
 	{
 		if (*format == '%' && *(format + 1) != '\0')
