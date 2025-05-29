@@ -6,7 +6,7 @@
 /*   By: asayag <asayag@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 12:57:00 by asayag            #+#    #+#             */
-/*   Updated: 2025/04/23 11:44:05 by asayag           ###   ########.fr       */
+/*   Updated: 2025/05/29 15:13:51 by asayag           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static char	*read_to_buffer(int fd, char *buffer)
 	if (!temp)
 		return (NULL);
 	bytes_read = 1;
-	while (bytes_read > 0)
+	while (bytes_read > 0 && (buffer == NULL || !ft_strchr(buffer, '\n')))
 	{
 		bytes_read = read(fd, temp, BUFFER_SIZE);
 		if (bytes_read < 0)

@@ -6,7 +6,7 @@
 /*   By: asayag <asayag@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 11:45:03 by asayag            #+#    #+#             */
-/*   Updated: 2025/04/23 11:45:14 by asayag           ###   ########.fr       */
+/*   Updated: 2025/05/29 14:41:48 by asayag           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,13 @@ unsigned int	ft_strlen(const char *a)
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != (char)c && *s != '\0')
+	while (*s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
 		s++;
-	if (*s == (char)c)
+	}
+	if (c == '\0')
 		return ((char *)s);
 	return (NULL);
 }
